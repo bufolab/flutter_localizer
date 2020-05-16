@@ -1,0 +1,35 @@
+<idea-plugin>
+    <id>com.yourcompany.flutter_extractor</id>
+    <name>Flutter extractor</name>
+    <vendor email="yourcompany@yourcompany.com" url="http://www.yourcompany.com">Company</vendor>
+
+    <description><![CDATA[
+    Flutter/Dart String extractor .<br>
+    <em>Extracts Strings to JSON files</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <intentionAction>
+            <className>action.ExtractStringIntentionAction</className>
+        </intentionAction>
+    </extensions>
+
+    <actions>
+        <group id="StringExtractor.TopMenu"
+               text="Setup"
+               description="Setup extractor">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <action id="Flutter Extractor Setup"
+                    class="action.SetupExtractorAction"
+                    text="_MyAction"
+                    description="MyAction"/>
+        </group>
+    </actions>
+</idea-plugin>
