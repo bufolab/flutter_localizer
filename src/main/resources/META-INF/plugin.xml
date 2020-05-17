@@ -28,8 +28,8 @@
             <add-to-group group-id="ToolsMenu" anchor="last"/>
             <action id="Flutter Extractor Setup"
                     class="action.SetupExtractorAction"
-                    text="_MyAction"
-                    description="MyAction"/>
+                    text="_FlutterExtractorSetup"
+                    description="Flutter extractor setup"/>
         </group>
     </actions>
 </idea-plugin>
