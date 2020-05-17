@@ -13,7 +13,7 @@ object JSONModifier {
     private fun getfileContent(project: Project, index: Int): String? {
 
         try {
-            val path = Settings.getPath(project, index)?.trim()
+            val path = Settings.getPath(project, index)
             val file = File(path)
             val readFileToString = FileUtils.readFileToString(file, "UTF-8")
             return readFileToString

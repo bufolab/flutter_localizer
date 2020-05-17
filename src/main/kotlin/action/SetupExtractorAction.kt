@@ -92,7 +92,9 @@ class SetupExtractorAction: AnAction() {
         builder.addCancelAction()
 
         builder.setOkOperation {
-            val location = jsonLocationTextField.text
+
+            //TODO make it to accept a folder and search for all the files inside.
+            val location = jsonLocationTextField.text.trim()
             Settings.savePath(project, location, 0)
 //            Settings.savePath(project, jsonLocationTextField2.text, 1)
 
